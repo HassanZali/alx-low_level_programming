@@ -3,20 +3,21 @@
 
 /**
  *_strcpy - main function
- *@dest: function parameter
- *@src: function parameter
+ *@dest: function parameter 1
+ *@src: function parameter 2
  *
- *Return: return dest value
+ *Return: always zero 0
  */
 
 char *_strcpy(char *dest, char *src)
 {
 int i;
+
 for (i = 0; src[i] != '\0'; i++)
 {
 	dest[i] = src[i];
-	dest[i] = '\0';
 }
-return (dest);
+	dest[i] = '\0';
 
+return (dest);
 }
