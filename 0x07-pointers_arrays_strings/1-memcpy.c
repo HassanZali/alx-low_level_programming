@@ -5,8 +5,8 @@
  *@dest: function parameter dest
  *@src: function patameter src
  *@n: parameter n
- *Return dest value.
  *
+ *Return: the dest value.
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)

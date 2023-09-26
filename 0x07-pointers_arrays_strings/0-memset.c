@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- *_memset - this is the function name
+ *_memset - this is the function name from the prototype
  *@s: function parameter s
  *@b: function parameter b
  *@n: function parameter n
- *Return s
+ *Return: the value of s.
  */
-
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int z;
