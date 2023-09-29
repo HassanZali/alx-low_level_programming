@@ -5,26 +5,25 @@
  *
  *@n: function parameter 1
  *
- *Return: result.
+ *Return: factorial result.
  */
 int factorial(int n)
 {
-	if (n == 0 || n == 1)
+	if (n < 0)
 
+	{
+	return (-1);
+	}
+	else if (n == 0)
 	{
 	return (1);
 	}
 	else
-
 	{
-	int result = 1;
-
-	while (n > 1)
-
-	{
-	result *= n;
-	n--;
+	return (n * factorial(n - 1));
 	}
-	return (result);
-	}
+}
+int factorial(int n)
+{
+	return (factorial result(n));
 }
