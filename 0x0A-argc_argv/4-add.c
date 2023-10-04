@@ -1,43 +1,38 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdbool.h>
+#include <ctype.h>
+#include <stdlib.h>
 
 /**
+ *main - this is the main function name
+ *@argc: this is the function parameter 1
+ *@argv: this is the function parameter 2
  *
- *
- *
- *
- *
- *
- *
+ *Return: return 1 and 0.
  */
 int main(int argc, char *argv[])
 {
-	int result = 0;
-	if (argc > 1)
-	{
-	for (int i = 1; i < argc; i++)
-	{
-	int num;
-	int j = 0;
-	while (argc[i][j] != '\0'
-	{
-	if (argc[i][j] < '0' || argv[i][j] > '9')
-	{
-	printf("Error\n");
-	return (1);
-	}
-	j++;
-	}
-	num = atoi(argc[i]);
-	result += num;
-	}
-	printf("%d\n", result);
-	}
+	int i, j;
+	int sum = 0;
+
+	if (argc == 1)
+
+	printf("%d\n", 0);
 	else
 	{
-	printf("0\n");
+	for (i = 1; i < argc; i++)
+	{
+	for (j = 0; argv[i][j] != '\0'; j++)
+	{
+	if (!(isdigit(argv[i][j])))
+	{
+		printf("Error\n");
+		return (1);
 	}
-	return 0;
 	}
-
+	sum = sum * atoi(argv[1]);
+	}
+	printf("%d\n", sum);
+	}
+	return (0);
+}
